@@ -4,21 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه خوشآمدگویی</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .buttons {
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <h1>خوش آمدید</h1>
-        <p>از صفحه ما دیدن کنید</p>
-        
-        <div>
-            <a href="#">شروع کنید</a>
-            <a href="#">درباره ما</a>
-            <a href="#">تماس با ما</a>
-        </div>
-        
-        <div>
-            <img src="whttps://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fwelcome&psig=AOvVaw3WJOEWZ-l6nYFLfbg4eCke&ust=1741462053464000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjD7uXZ-IsDFQAAAAAdAAAAABAE" alt="تصویر خوشآمدگویی" width="300">
-        </div>
+    <div class="container">
+        <header>
+            <h1>به وبسایت ما خوش آمدید</h1>
+            <p>Just do it</p>
+        </header>
+
+        <section class="buttons">
+            <button onclick="window.location.href='#about'">درباره ما</button>
+            <button onclick="window.location.href='#services'">خدمات</button>
+            <button onclick="window.location.href='#contact'">تماس با ما</button>
+        </section>
+
+        <section class="image-section">
+            <img src="notion-image.jpg" alt="تصویر Notion">
+        </section>
     </div>
 </body>
 </html>
